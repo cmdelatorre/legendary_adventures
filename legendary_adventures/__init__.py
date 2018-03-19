@@ -1,4 +1,6 @@
-__version__ = '0.12'
+__version__ = '0.1'
 
 def adventure():
     return "Había una vez... truz"
+
+
