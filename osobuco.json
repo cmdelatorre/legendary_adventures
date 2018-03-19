@@ -18,7 +18,7 @@
     "models": {
       "storyteller":{
         "title": "Awesome adventures storyteller",
-        "bucket": "osobuco-test",
+        "bucket": "storyteller",
         "source": "legendary_adventures",
         "load_model_method": "legendary_adventures.adventure"
       }
