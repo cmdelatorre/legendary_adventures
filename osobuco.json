@@ -1,0 +1,26 @@
+{
+    "mode": "user",
+    "repo_type": "s3",
+    "s3_key": "K2VS9RK0Q5PVXCFBXCAU",
+    "s3_access_key": "7JdUYvGYS0lc8BjbGT1iAO5BWp6W9496CBy5Ki0U",
+    "scope_list": ["dev", "staging", "production"],
+    "scope_warning": ["production"],
+    "env_scope": "dev",
+    "user": ":git:USER_EMAIL",
+    "sources": {
+      "legendary_adventures": {
+        "type": "wheel",
+        "name": "legendary_adventures",
+        "version": ":src_value:legendary_adventures.__version__",
+        "revision": ":git:COMMIT_HASH"
+      }
+    },
+    "models": {
+      "storyteller":{
+        "title": "Awesome adventures storyteller",
+        "bucket": "osobuco-test",
+        "source": "legendary_adventures",
+        "load_model_method": "legendary_adventures.adventure"
+      }
+    }
+  }
